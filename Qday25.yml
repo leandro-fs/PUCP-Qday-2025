@@ -1,0 +1,46 @@
+name: Qday25
+# acorde a https://quantum.cloud.ibm.com/docs/en/guides/install-qiskit
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python >=3.12, <3.13
+  - anaconda
+  - anaconda-client
+  - anaconda-navigator
+  - anaconda-project
+  - certifi
+  - conda
+  - conda-build
+  - conda-content-trust
+  - conda-env
+  - conda-pack
+  - conda-package-handling
+  - conda-repo-cli
+  - conda-token
+  - conda-verify
+  - ipykernel
+  - ipython
+  - ipython_genutils
+  - ipywidgets
+  - jupyter
+  - jupyter_client
+  - jupyter_console
+  - jupyter_core
+  - jupyter_server
+  - jupyterlab
+  - jupyterlab_pygments
+  - jupyterlab_server
+  - jupyterlab_widgets
+  - jupyterlab-git
+  - pip:
+    - pip
+    - pylatexenc
+    - qiskit
+    - qiskit_aer
+    - qiskit-ibm-runtime
+    - qiskit[visualization]
+    - qiskit-code-assistant-jupyterlab # acorde con https://quantum.cloud.ibm.com/docs/en/guides/qiskit-code-assistant-jupyterlab
+    # - pdflatex #fdflatex 0.1.3 requires attrs<19.0,>=18.2, but you have attrs 25.4.0 which is incompatible.
+prefix: /opt/anaconda3
